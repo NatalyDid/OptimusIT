@@ -1,6 +1,7 @@
 $(function () {
 
-    $('.main-menu .menu-items').on('click', function () {
+    $('.main-menu>li').on('click', function () {
+        $('.main-menu').find('.items-child').hide();
         $(this).find('.items-child').slideToggle();
         console.log('aaa');
     });
