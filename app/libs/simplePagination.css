@@ -11,7 +11,7 @@ ul.simple-pagination {
 .simple-pagination {
 	display: block;
 	overflow: hidden;
-	padding: 10px 5px 0 0;
+	padding: 10px 5px;
 	margin: 0;
 }
 
@@ -109,13 +109,18 @@ span.ellipse.clickable {
 
 .light-theme a, .light-theme span {
 	float: left;
-	color: #009ee2;
+	color: #0f657f;
 	font-size:14px;
-	line-height:24px;
 	font-weight: normal;
 	text-align: center;
-	min-width: 14px;
+	min-width: 32px;
+	/*background: #e6f4f8;*/
+	padding: 5px;
+	border-radius: 50%;
+}
 
+.current{
+	background: #e6f4f8;
 }
 
 .light-theme a:hover, .light-theme li:not(.disabled):not(.active) span:hover {
@@ -123,9 +128,9 @@ span.ellipse.clickable {
 	background: #FCFCFC;
 }
 
-.light-theme .current {
-	font-weight: bold;
-}
+/*.light-theme .current {*/
+	/*font-weight: bold;*/
+/*}*/
 
 .light-theme .ellipse {
 	background: none;
