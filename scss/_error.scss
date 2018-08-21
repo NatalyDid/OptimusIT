@@ -1,0 +1,77 @@
+.container-error {
+  padding: 0;
+}
+
+.error-inner-wrapper {
+  padding: 70px 35px 30px 35px;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    padding: 100px 140px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 250px 0;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.error-title__text {
+  @extend .font-bebas-light;
+  font-size: 36px;
+  line-height: 36px;
+  color: $turquoise;
+  & span {
+    font-family: $bebasregular;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 72px;
+    line-height: 72px;
+  }
+}
+
+.error-title__line {
+  height: 0;
+  border-bottom: 5px solid $yellow-border;
+  width: 45px;
+  margin-left: 72px;
+  @media screen and (min-width: 768px) {
+    width: 55px;
+    margin-left: 100px ;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 85px;
+    margin-left: 145px ;
+  }
+}
+
+.error-message {
+  @extend .font-opensans;
+  font-size: 12px;
+  line-height: 14px;
+  color: $grey;
+  margin: 30px 0 10px 0;
+  @media screen and (min-width: 768px) {
+    width: 370px;
+  }
+}
+
+.error-buttons{
+  & .btn-violet{
+    width: 140px ;
+    margin-right: 10px;
+  }
+  & .btn-transparent_violet{
+    width: 180px ;
+  }
+}
+
+.error-image{
+  margin-top: 20px;
+}

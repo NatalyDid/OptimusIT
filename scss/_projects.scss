@@ -1,0 +1,76 @@
+.container-projects{
+  padding: 0;
+  .btn-violet {
+    @media screen and (min-width: 768px) {
+      margin-top: 0;
+      width: 230px;
+    }
+  }
+}
+.projects-inner-wrapper{
+  @media screen and (min-width: 768px) {
+    padding: 0 35px 15px 35px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+.projects-header {
+  padding: 30px 15px;
+  @media screen and (min-width: 768px) {
+    padding: 70px 90px 60px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.projects-title {
+  padding: 0 25px;
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
+}
+.projects-title__text {
+  @extend .font-bebas-book;
+  color: $turquoise;
+  & span {
+    font-family: $bebasregular;
+  }
+}
+
+.projects-title__line {
+  width: 80px;
+  height: 0;
+  border-bottom: 5px solid $yellow-border;
+}
+
+.slider-projects-wrapper{
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.projects{
+  .slick-dots {
+    justify-content: center;
+    & li {
+      color: $white;
+    }
+  }
+  .slick-active{
+    list-style-image: url("../img/active-white.png");
+  }
+
+  .portfolio-projects-info{
+    background: linear-gradient(to right, $green, $dark-blue);
+    padding: 35px 15px 20px 15px;
+    @media screen and (min-width: 768px) {
+      background: transparent;
+      padding: 0;
+    }
+  }
+}

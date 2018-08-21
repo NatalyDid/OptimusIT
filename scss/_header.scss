@@ -1,0 +1,276 @@
+.header {
+  background: $turquoise;
+}
+
+.container-header {
+  padding: 0 35px 0 0;
+  @media screen and (min-width: 768px) {
+    padding-right: 0;
+  }
+}
+
+.header-inner-wrapper {
+  height: 70px;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    height: 100px;
+    position: relative;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}
+
+label {
+  margin-bottom: 0;
+}
+
+.logo {
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    left: 25%;
+  }
+  @media screen and (min-width: 1200px) {
+    left: 0;
+  }
+  & img {
+    width: 170px;
+    @media screen and (min-width: 768px) {
+      width: 236px;
+    }
+  }
+}
+
+.burger__icon {
+  color: $white;
+  font-size: 30px;
+  background: $light-turquoise;
+  padding: 20px;
+  @media screen and (min-width: 768px) {
+    padding: 35px;
+  }
+}
+
+input[type='checkbox'] {
+  display: none;
+  & .fa.fa-times {
+    display: none;
+  }
+  & ~ .menu {
+    display: none;
+  }
+  & ~ .fa.fa-bars {
+    display: inline-block;
+  }
+  &:checked .fa.fa-times {
+    display: inline-block;
+  }
+  &:checked ~ .fa.fa-bars {
+    display: none;
+  }
+  &:checked ~ .menu {
+    display: block;
+  }
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: $turquoise;
+  left: 0;
+  transition: 0.5s all;
+  z-index: 500;
+  &__wrapper {
+    min-height: 100vh;
+  }
+  @media screen and (min-width: 500px) {
+    min-width: 60vw;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 0;
+    width: 330px;
+  }
+}
+
+.menu-left {
+  background: $light-turquoise;
+}
+
+.main-menu {
+  list-style: none;
+  & li {
+    border-bottom: 2px solid $light-turquoise;
+    display: block;
+    //height: 45px;
+    @media screen and (min-width: 768px) {
+      border-bottom: none;
+    }
+    @media screen and (min-width: 1200px) {
+      height: auto;
+    }
+    &:hover, :active, :focus{
+      background: $light-turquoise;
+    }
+    & a {
+      @extend .font-opensans;
+      color: $light-blue;
+      padding-left: 20px;
+      height: 45px;
+      line-height: 45px;
+      display: block;
+      &:hover, :active, :focus{
+        background: $light-turquoise;
+      }
+      & .fa {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+.menu-items {
+  @media screen and (min-width: 1200px) {
+    position: relative;
+  }
+}
+
+.items-child {
+  display: none;
+  position: static;
+  list-style: none;
+  & li {
+    border-bottom: none;
+    background: $middle-turquoise;
+    & a {
+      color: $white;
+      font-size: 12px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 0;
+    left: 330px;
+    border-top: 4px solid $yellow-border;
+    width: 250px;
+    background-color: rgba(102, 157, 173, 0.8);
+    min-height: 100vh;
+    & li {
+      background-color: transparent;
+      &:hover {
+        background: $light-turquoise;
+      }
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    min-height: 0;
+    left: 0;
+    top: 70px;
+    z-index: 10;
+    & li {
+      padding: 0 15px;
+    }
+  }
+}
+
+.menu-right_title {
+  padding-left: 20px;
+  @media screen and (min-width: 768px) {
+    margin: 15px 0 25px 0;
+  }
+}
+
+.contacts {
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
+.contacts_item {
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: $pale-turquoise;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  & .fa {
+    font-size: 14px;
+  }
+}
+
+.contacts_social {
+  margin-top: 30px;
+  color: $pale-turquoise;
+  & .fa {
+    font-size: 20px;
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.topMenu {
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 100px;
+    padding-top: 10px;
+  }
+}
+
+.contacts_top {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 25px;
+  }
+  & .contacts_communicate {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+    & .contacts_item {
+      margin-bottom: 6px;
+      @media screen and (min-width: 768px) {
+        margin-right: 20px;
+      }
+    }
+  }
+  .contacts_social {
+    margin-top: 0;
+  }
+}
+
+.menu_top {
+  //margin-top: 15px;
+  & .main-menu {
+    & > li {
+      display: inline-block;
+      //padding: 20px 25px 0 25px;
+      //&:hover,
+      //&:active,
+      //&:focus{
+      //  background: $light-turquoise;
+      //}
+      //&:last-child {
+      //  margin-right: 0;
+      //}
+      & > a {
+        //padding-left: 0;
+        padding: 33px 25px 15px 25px;
+        height: auto;
+        line-height: initial;
+        &:hover,
+        &:active,
+        &:focus{
+          background: $light-turquoise;
+        }
+      }
+    }
+  }
+}
+

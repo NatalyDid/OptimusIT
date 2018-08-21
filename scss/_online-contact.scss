@@ -1,0 +1,38 @@
+.online-contact {
+  transform: rotate(270deg);
+  position: fixed;
+  right: -70px;
+  bottom: 200px;
+  & .fa {
+    font-size: 30px;
+    border-radius: 50%;
+    transform: rotate(90deg);
+    background: $white;
+    position: absolute;
+    bottom: -1px;
+  }
+  & .fa-phone {
+    padding: 10px 12px;
+    color: $light-green;
+    border: 3px solid $light-green;
+    left: -10px;
+    z-index: 1;
+  }
+  & .fa-comments {
+    padding: 8px;
+    color: $yellow-bg;
+    border: 3px solid $yellow-bg;
+    left: -70px;
+  }
+}
+
+.phone-text {
+  font-family: $opensansbold;
+  font-size: 11px;
+  padding: 10px 20px 10px 55px;
+  background: $light-green;
+  color: $white;
+  width: 200px;
+  border-radius: 30px;
+  position: relative;
+}

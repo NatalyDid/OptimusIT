@@ -1,0 +1,107 @@
+.slider-projects-item{
+  @media screen and (min-width: 768px) {
+    flex-basis: 50%;
+    padding: 30px 30px 20px 30px;
+    &:nth-child(n+2){
+      background: $dark-blue;
+    }
+    &:nth-child(3n+1){
+      background: $green;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &:nth-child(odd){
+      flex-basis: 40%;
+    }
+    &:nth-child(even){
+      flex-basis: 60%;
+    }
+  }
+}
+
+
+.slide-project-info{
+  padding: 0 10px;
+  @media screen and (min-width: 768px) {
+    min-height: 155px;
+  }
+}
+
+.slide-project-title{
+  @extend .font-bebas-book;
+}
+.slide-project-subtitle{
+  font-family: $opensansbold;
+  font-size: 12px;
+  line-height: 16px;
+  color: $white;
+  margin-bottom: 15px;
+}
+.slide-project-text{
+  font-family: $opensans;
+  font-size: 11px;
+  line-height: 14px;
+  color: $white;
+}
+.slider-project-site{
+  @extend .font-cabin-semibold;
+  font-size: 14px;
+  line-height: 18px;
+  color: $yellow-bg;
+  text-decoration: underline;
+}
+.slider-project-img {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 150px;
+  width: 100%;
+  margin-top: 35px;
+  @media screen and (min-width: 400px) {
+    height: 185px;
+  }
+}
+.project-img1{
+  background-image: url("../img/portfolio/touchnote.jpg");
+  @media screen and (min-width: 768px) {
+    background-size: 115%;
+    background-position: 0 0;
+  }
+  @media screen and (min-width: 1200px) {
+    background-size: 140%;
+    background-position: -80px 0;
+  }
+}
+.project-img2{
+  background-image: url("../img/portfolio/pzu.jpg");
+  @media screen and (min-width: 768px) {
+    background-size: 115%;
+    background-position: 0 0;
+  }
+  @media screen and (min-width: 1200px) {
+    background-size: 163%;
+    background-position: -123px 0;
+  }
+}
+.project-img3{
+  background-image: url("../img/portfolio/aviwest.jpg");
+  @media screen and (min-width: 768px) {
+    background-size: 115%;
+    background-position: 0 0;
+  }
+  @media screen and (min-width: 1200px) {
+    background-size: 140%;
+    background-position: -100px 0;
+  }
+}
+.project-img4{
+  background-image: url("../img/portfolio/DHL.jpg");
+  @media screen and (min-width: 768px) {
+    background-size: 115%;
+    background-position: 0 0;
+  }
+  @media screen and (min-width: 1200px) {
+    background-size: 100%;
+    background-position: 0 -75px;
+  }
+}

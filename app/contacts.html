@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OptimusIT</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+</head>
+<body>
+<div class="header">
+    <div class="container-fluid container-header">
+        <div class="d-flex justify-content-between header-inner-wrapper">
+            <div class="burger d-block d-lg-none">
+                <label>
+                    <input type="checkbox" class="checkbox">
+                    <i class="burger__icon fa fa-bars"></i>
+                    <div class="menu">
+                        <div class="menu__wrapper d-flex">
+                            <div class="menu-left">
+                                <i class="burger__icon fa fa-times"></i>
+                            </div>
+                            <div class="menu-right flex-fill">
+                                <div class="font-bebas-regular menu-right_title">menu</div>
+                                <ul class="main-menu">
+                                    <li class="menu-items">
+                                        <a href="#">IT-troubleshooting &nbsp; <i class="fa fa-chevron-right"
+                                                                                 aria-hidden="true"></i></a>
+                                        <ul class="items-child">
+                                            <li><a href="">Create solution</a></li>
+                                            <li><a href="">Fix, Upgrade & Repair</a></li>
+                                            <li><a href="">Ready solutions</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-items">
+                                        <a href="#">Tools &nbsp; <i class="fa fa-chevron-right"
+                                                                    aria-hidden="true"></i></a>
+                                        <ul class="items-child">
+                                            <li><a href="">Web Platform</a></li>
+                                            <li><a href="">Mobile, VR, AR Apps</a></li>
+                                            <li><a href="">Game Development</a></li>
+                                            <li><a href="">Web design (UX / UI, Landing pages)</a></li>
+                                            <li><a href="">Graphic Design </a></li>
+                                            <li><a href="">Outsource</a></li>
+                                            <li><a href="">Other our offers which can interest you</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">Portfolio</a></li>
+                                    <li class="menu-items">
+                                        <a href="#">Clients Zone &nbsp; <i class="fa fa-chevron-right"
+                                                                           aria-hidden="true"></i></a>
+                                        <ul class="items-child">
+                                            <li><a href="">Prices</a></li>
+                                            <li><a href="">Special offers</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                                <div class="contacts">
+                                    <div class="contacts_communicate d-block d-sm-block d-md-none">
+                                        <div class="contacts_item">
+                                            <i class="fa fa-skype" aria-hidden="true"></i> &nbsp;
+                                            manager.optimus-it
+                                        </div>
+                                        <div class="contacts_item">
+                                            <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;
+                                            optimusit.manager@gmail.com
+                                        </div>
+                                        <div class="contacts_item">
+                                            <i class="fa fa-phone" aria-hidden="true"></i> &nbsp;
+                                            +1-929-999-5794
+                                        </div>
+                                    </div>
+                                    <div class="contacts_social">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png">
+                </a>
+            </div>
+            <div class="topMenu d-none d-md-block ml-auto">
+                <div class="contacts_top">
+                    <div class="contacts_communicate">
+                        <div class="contacts_item">
+                            <i class="fa fa-skype" aria-hidden="true"></i> &nbsp;
+                            manager.optimus-it
+                        </div>
+                        <div class="contacts_item">
+                            <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;
+                            optimusit.manager@gmail.com
+                        </div>
+                        <div class="contacts_item">
+                            <i class="fa fa-phone" aria-hidden="true"></i> &nbsp;
+                            +1-929-999-5794
+                        </div>
+                    </div>
+                    <div class="contacts_social d-none d-lg-block">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="menu_top d-none d-lg-block">
+                    <ul class="main-menu">
+                        <li class="menu-items">
+                            <a href="#">IT-troubleshooting &nbsp; <i class="fa fa-chevron-down"
+                                                                     aria-hidden="true"></i></a>
+                            <ul class="items-child">
+                                <li><a href="">Create solution</a></li>
+                                <li><a href="">Fix, Upgrade & Repair</a></li>
+                                <li><a href="">Ready solutions</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-items">
+                            <a href="#">Tools &nbsp; <i class="fa fa-chevron-down"
+                                                        aria-hidden="true"></i></a>
+                            <ul class="items-child">
+                                <li><a href="">Web Platform</a></li>
+                                <li><a href="">Mobile, VR, AR Apps</a></li>
+                                <li><a href="">Game Development</a></li>
+                                <li><a href="">Web design (UX / UI, Landing pages)</a></li>
+                                <li><a href="">Graphic Design </a></li>
+                                <li><a href="">Outsource</a></li>
+                                <li><a href="">Other our offers which can interest you</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Portfolio</a></li>
+                        <li class="menu-items">
+                            <a href="#">Clients Zone &nbsp; <i class="fa fa-chevron-down"
+                                                               aria-hidden="true"></i></a>
+                            <ul class="items-child">
+                                <li><a href="">Prices</a></li>
+                                <li><a href="">Special offers</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="contact">
+    <div class="container-fluid container-contact">
+        <div class="contact-inner-wrapper">
+            <div class="contact-title">
+                <div class="contact-title__text">
+                    <span>CONTACT </span>US
+                </div>
+                <div class="contact-title__line"></div>
+            </div>
+            <div class="row">
+                <div class="contact-description col-12 col-md-6 col-lg-8">
+                    <div class="contact-message">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua.
+                    </div>
+                    <div class="contact-form">
+                        <form>
+                            <input type="text" class="form-control" id="inputContactName" placeholder="Your Name*">
+                            <input type="text" class="form-control" id="inputContactEmail" placeholder="Your Email*">
+                            <textarea class="form-control" id="inputContactMessage1" rows="7"
+                                      placeholder="Your message"></textarea>
+
+                            <div class="row">
+                                <div class="form-text col-6 col-md-12">* Required field</div>
+                                <div class="form-button col-6 col-md-12">
+                                    <button class="btn-orange" type="submit">send</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+                <div class="contact-data col-12 col-md-6 col-lg-4">
+                    <div class="contact-data__item">
+                        <div class="contact-data__title">
+                            EMAIL
+                        </div>
+                        <div class="contact-data__text">
+                            <a href="" class="contact-data__link">optimusit.manager@gmail.com</a>
+                        </div>
+                        <div class="contact-data__line"></div>
+                    </div>
+                    <div class="contact-data__item">
+                        <div class="contact-data__title">
+                            SKYPE
+                        </div>
+                        <div class="contact-data__text">
+                            manager.optimus-it
+                        </div>
+                        <div class="contact-data__line"></div>
+                    </div>
+                    <div class="contact-data__item">
+                        <div class="contact-data__title">
+                            PHONE
+                        </div>
+                        <div class="contact-data__text">
+                            +1-929-999-5794
+                        </div>
+                        <div class="contact-data__line"></div>
+                    </div>
+                    <div class="contact-data__item">
+                        <div class="contact-data__title">
+                            ON THE WEB
+                        </div>
+                        <div class="contact-data__text">
+                            <div class="contact-data__text-item">Facebook</div>
+                            <div class="contact-data__text-item">Twitter</div>
+                            <div class="contact-data__text-item">LinkedIn</div>
+                            <div class="contact-data__text-item">Youtube</div>
+                        </div>
+                        <div class="contact-data__line"></div>
+                    </div>
+                    <div class="contact-data__item">
+                        <div class="contact-data__title">
+                            ON THE MAP
+                        </div>
+                        <div class="contact-data__text">
+                            3 Gagarina Str., Zaporizhia, 69000, Ukraine
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="contact-map">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2678.136361896719!2d35.14345161585254!3d47.83695158002949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc674c6c57288f%3A0xec833d3844953b5d!2z0LLRg9C70LjRhtGPINCT0LDQs9Cw0YDRltC90LAsIDMsINCX0LDQv9C-0YDRltC20LbRjywg0JfQsNC_0L7RgNGW0LfRjNC60LAg0L7QsdC70LDRgdGC0YwsIDY5MDYx!5e0!3m2!1sru!2sua!4v1534496800530"
+                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        </div>
+    </div>
+</div>
+</div>
+<div class="footer">
+    <div class="container-fluid">
+        <div class="footer-inner-wrapper">
+            <div class="footer-form">
+                <form>
+                    <div class="form-title">Leave Us a message</div>
+                    <input type="text" class="form-control" id="inputName" placeholder="Your Name*">
+                    <input type="text" class="form-control" id="inputEmail" placeholder="Your Email*">
+                    <textarea class="form-control" id="inputMessage1" rows="7" placeholder="Your message"></textarea>
+                    <div class="form-text">* Required field</div>
+                    <div class="form-button">
+                        <button class="btn-transparent" type="submit">send</button>
+                    </div>
+                </form>
+            </div>
+            <div class="footer-info">
+
+                <div class="footer-description">
+                    <div class="footer-logo">
+                        <img src="img/logo-footer.png">
+                    </div>
+                    <div class="footer-slogan">
+                        Principal competence (since 1998) is confirmed by a number of success stories: WEB design and
+                        development (including Blockchain and Marketplace); 2D / 3D / VR / AR games and apps; 3D Design
+                        / Animations; graphic design<br>
+                        We are ready to "grow up" your online business at any stage: beginning from the development of
+                        the project concept and the evaluation of resources and ending with the acceleration of an
+                        objectively operating business.
+                    </div>
+                </div>
+                <div class="menu_footer">
+                    <ul class="main-menu">
+                        <li class="menu_footer-items">
+                            <a href="#">IT-troubleshooting &nbsp; <i class="fa fa-chevron-down"
+                                                                     aria-hidden="true"></i></a>
+                            <ul class="items-child">
+                                <li><a href="">Create solution</a></li>
+                                <li><a href="">Fix, Upgrade & Repair</a></li>
+                                <li><a href="">Ready solutions</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu_footer-items">
+                            <a href="#">Tools &nbsp; <i class="fa fa-chevron-down"
+                                                        aria-hidden="true"></i></a>
+                            <ul class="items-child">
+                                <li><a href="">Web Platform</a></li>
+                                <li><a href="">Mobile, VR, AR Apps</a></li>
+                                <li><a href="">Game Development</a></li>
+                                <li><a href="">Web design (UX / UI, Landing pages)</a></li>
+                                <li><a href="">Graphic Design </a></li>
+                                <li><a href="">Outsource</a></li>
+                                <li><a href="">Other our offers which can interest you</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Portfolio</a></li>
+                        <li class="menu_footer-items">
+                            <a href="#">Clients Zone &nbsp; <i class="fa fa-chevron-down"
+                                                               aria-hidden="true"></i></a>
+                            <ul class="items-child">
+                                <li><a href="">Prices</a></li>
+                                <li><a href="">Special offers</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="contacts_top">
+                    <div class="contacts_communicate">
+                        <div class="contacts_item">
+                            <i class="fa fa-skype" aria-hidden="true"></i> &nbsp;
+                            manager.optimus-it
+                        </div>
+                        <div class="contacts_item">
+                            <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;
+                            optimusit.manager@gmail.com
+                        </div>
+                        <div class="contacts_item">
+                            <i class="fa fa-phone" aria-hidden="true"></i> &nbsp;
+                            +1-929-999-5794
+                        </div>
+                        <div class="contacts_item">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp;
+                            3 Gagarina Str., Zaporizhia, 69000, Ukraine
+                        </div>
+                    </div>
+                    <div class="contacts_social">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <div class="container-fluid">
+        <div class="copyright-inner-wrapper">
+            <div class="copyright-text">Copyright OPTIMUS IT 2018. All rights reserved</div>
+            <div class="copyright-menu">
+                <a href="#" class="copyright-menu__item">License</a>
+                <a href="#" class="copyright-menu__item">Terms of Use</a>
+                <a href="#" class="copyright-menu__item">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="online-contact">
+    <i class="fa fa-phone" aria-hidden="true"></i>
+    <div class="phone-text">Schedule a phone call</div>
+    <i class="fa fa-comments" aria-hidden="true"></i>
+</div>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="js/header.js"></script>
+</body>
+</html>

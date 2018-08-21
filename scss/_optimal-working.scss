@@ -1,0 +1,106 @@
+.container-optimal {
+  padding: 0;
+  position: relative;
+  .btn-violet {
+    @media screen and (min-width: 768px) {
+      margin-top: 50px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 0;
+    }
+  }
+}
+
+.optimal-working-inner-wrapper{
+  @media screen and (min-width: 1200px) {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media screen and (min-width: 1920px) {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}
+
+.optimal-working-header {
+  padding: 30px 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 30px 0 rgba(30, 186, 203, 0.4);
+  @media screen and (min-width: 768px) {
+    padding: 70px 90px 60px 90px;
+  }
+}
+
+.optimal-working-title {
+  padding: 0 25px;
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
+}
+
+.optimal-working-title__text {
+  @extend .font-bebas-book;
+  color: $turquoise;
+  & span {
+    font-family: $bebasregular;
+  }
+}
+
+.optimal-working-title__line {
+  width: 110px;
+  height: 0;
+  border-bottom: 5px solid $yellow-border;
+}
+
+
+.optimal-working-diagram{
+  @media screen and (min-width: 1200px) {
+    max-width: 830px;
+    margin: 0 auto;
+  }
+}
+.optimal-working-diagram-image {
+  background: url("../img/diagram-1.svg") no-repeat;
+  background-position: -180px 0;
+  background-size: 200%;
+  height: 300px;
+  @media screen and (min-width: 500px) {
+    background-size: 100%;
+    background-position: 10px 0;
+  }
+  @media screen and (min-width: 768px) {
+    background-position: 40px 0;
+    background-size: 90%;
+    height: 760px;
+  }
+  @media screen and (min-width: 1200px) {
+    background-position: 40px 0;
+    background-size: 90%;
+    height: 570px;
+  }
+  @media screen and (min-width: 1920px) {
+    background-position: 40px 0;
+    background-size: 90%;
+    height: 700px;
+  }
+}
+
+.image-increase{
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  & .fa{
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 50%;
+    background: $white;
+    color: $yellow-bg;
+    border: 3px solid $yellow-bg;
+  }
+}
+
+
+

@@ -1,0 +1,57 @@
+.success{
+  background: $turquoise;
+  border-top: 10px solid $green;
+  .slick-arrow {
+    position: absolute;
+    top: -87px;
+    z-index: 1;
+    background: transparent;
+    border: none;
+    color: $light-blue;
+    font-size: 40px;
+  }
+
+  .slick-prev {
+    right: 18.75%;
+    @media screen and (min-width: 768px) {
+      left: -60px;
+    }
+    @media screen and (min-width: 1200px) {
+      left: -80px;
+    }
+    @media screen and (min-width: 1920px) {
+      left: -50px;
+    }
+  }
+
+  .slick-next {
+    right: 6.25%;
+    @media screen and (min-width: 768px) {
+      left: 615px;
+    }
+    @media screen and (min-width: 1200px) {
+      left: 970px;
+    }
+    @media screen and (min-width: 1920px) {
+      left: 950px;
+    }
+  }
+}
+.container-success{
+  padding: 0;
+}
+.success-title{
+  @extend .font-bebas-light;
+  font-size: 36px;
+  line-height: 36px;
+  width: 195px;
+  padding: 50px 0 20px 40px;
+  & span{
+    font-family: $bebasregular;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 60px;
+    width: 90%;
+    padding: 70px 0 20px 95px;
+  }
+}

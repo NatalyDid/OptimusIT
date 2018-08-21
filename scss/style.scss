@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import "../libs/bootstrap.min.css";
+//@import "../libs/cropper.min.css";
+//@import "../libs/pikaday.css";
+//@import "../libs/time-picker.css";
+//@import "../libs/jquery.timepicker.css";
+@import "../libs/simplePagination.css";
+@import "../libs/slick.css";
+@import "../fonts/stylesheet.css";
+@import "../icons/font-awesome.min.css";
+@import "variables";
+@import "common";
+@import "header";
+@import "footer";
+//
+@import "portfolio-projects-item";
+@import "slide-block";
+@import "business";
+@import "intro";
+@import "optimal-working";
+@import "services";
+@import "projects";
+@import "feedback";
+@import "benefits";
+@import "other-offers";
+@import "success";
+@import "online-contact";
+@import "error";
+@import "article";
+@import "contacts";
+@import "portfolio";
+//@import "order";
+//@import "impressum";
+

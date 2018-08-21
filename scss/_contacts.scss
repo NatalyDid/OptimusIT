@@ -1,0 +1,124 @@
+.contact{
+  & .btn-orange{
+    margin: 0;
+    height: 50px;
+    border-radius: 25px;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      width: 150px;
+    }
+  }
+}
+
+.container-contact{
+  padding: 0;
+}
+
+.contact-inner-wrapper{
+  padding: 70px 25px 0 25px;
+  @media screen and (min-width: 768px) {
+    padding: 100px 35px 0 35px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1920px) {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}
+.contact-title{
+  padding-left: 20px;
+}
+.contact-title__text {
+  @extend .font-bebas-light;
+  font-size: 36px;
+  line-height: 36px;
+  color: $turquoise;
+  & span {
+    font-family: $bebasregular;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+
+.contact-title__line {
+  height: 0;
+  border-bottom: 5px solid $yellow-border;
+  width: 100px;
+}
+
+.contact-description{
+  @media screen and (min-width: 768px) {
+    padding-right: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-right: 60px;
+  }
+}
+
+.contact-message{
+  @extend .font-opensans-main;
+  color: $grey;
+  text-indent: 20px;
+  margin: 30px 0;
+}
+
+.contact-form{
+  margin-bottom: 50px;
+  & .form-control{
+    background: $form-bg;
+    border: 1px solid $form-border;
+  }
+  & .form-text{
+    color: $grey;
+  }
+}
+
+.contact-data__item{
+  margin-bottom: 25px;
+}
+
+.contact-data__title{
+  @extend .font-cabinmedium;
+  font-size: 20px;
+}
+
+.contact-data__text{
+  @extend .font-opensans;
+  font-size: 12px;
+  color: $grey;
+  margin: 15px 0 20px 0;
+}
+
+.contact-data__text-item{
+  border-right: 1px solid $grey;
+  padding: 0 8px;
+  display: inline-block;
+  &:first-child{
+    padding-left: 0;
+  }
+  &:last-child{
+    padding-right: 0;
+    border-right: none;
+  }
+}
+
+.contact-data__link{
+  @extend .contact-data__text;
+  color: $blue-bg;
+  text-decoration: underline;
+  &:hover{
+    color: $blue-bg;
+    text-decoration: none;
+  }
+}
+
+.contact-data__line{
+  height: 0;
+  border-bottom: 1px solid $yellow-border;
+  width: 100px;
+}
