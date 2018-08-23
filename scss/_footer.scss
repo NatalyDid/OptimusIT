@@ -26,7 +26,7 @@
   background: linear-gradient(to right, $green, $dark-blue);
   position: absolute;
   top: -10px;
-  width: 95%;
+  width: calc(100vw - 50px);
   @media screen and (min-width: 768px) {
     width: 50%;
     left: 35px;

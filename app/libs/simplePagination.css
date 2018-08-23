@@ -9,10 +9,12 @@ ul.simple-pagination {
 }
 
 .simple-pagination {
-	display: block;
+	/*display: block;*/
 	overflow: hidden;
-	padding: 10px 5px;
+	padding: 30px 5px 10px 5px;
 	margin: 0;
+	display: flex;
+	justify-content: center;
 }
 
 .simple-pagination ul {

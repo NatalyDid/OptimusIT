@@ -1,8 +1,16 @@
 .portfolio {
+  .portfolio-projects-info {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
   .slider-projects-item {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     flex-basis: 100%;
     padding: 30px 10px 20px 10px;
+    box-sizing: border-box;
     &:nth-child(even) {
       background: $dark-blue;
     }
@@ -12,31 +20,61 @@
     &:last-child {
       margin-bottom: 0;
     }
+    &:hover {
+      border: 2px solid $white;
+      box-shadow: 7px 8px 17px 0 rgba(0, 162, 211, 0.4);
+
+    }
+    @media screen and (min-width: 768px) {
+      flex-basis: 49%;
+      &:nth-child(n+3) {
+        margin-bottom: 0;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: 24%;
+      &:nth-child(n+3) {
+        margin-bottom: 20px;
+      }
+      &:nth-child(n+5) {
+        margin-bottom: 0;
+      }
+    }
+    .project-img4 {
+      @media screen and (min-width: 1200px) {
+        -webkit-background-size: 100% 100%;
+        background-size: 200%;
+        background-position: -20px -40px;
+      }
+    }
   }
-  .slide-project-info{
+  .slide-project-info {
     padding: 0 15px;
-    //@media screen and (min-width: 768px) {
-    //  min-height: 155px;
-    //}
+    @media screen and (min-width: 768px) {
+      min-height: 132px;
+    }
   }
-  .slide-project-title{
+  .slide-project-title {
     font-size: 48px;
     margin-bottom: 8px;
   }
-  .slider-project-site{
+  .slider-project-site {
     color: $white;
-    &:hover{
+    &:hover {
       text-decoration: none;
     }
   }
-  .btn-orange{
+  .btn-orange {
     display: block;
     font-size: 14px;
     line-height: 35px;
     text-align: center;
     margin: 20px 0 0 0;
-    &:hover{
+    &:hover {
       text-decoration: none;
+    }
+    @media screen and (min-width: 768px) {
+      width: 160px;
     }
   }
 }
@@ -46,12 +84,23 @@
   @media screen and (min-width: 768px) {
     padding: 20px 20px 80px 20px;
   }
+  @media screen and (min-width: 1920px) {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .portfolio-title {
   margin: 40px 0 10px 0;
   @media screen and (min-width: 768px) {
     margin: 70px 0 30px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -89,23 +138,33 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 50px;
   }
+  @media screen and (min-width: 1200px) {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-.portfolio-links{
+.portfolio-links {
   padding: 0 15px;
 }
 
-.page-link{
+.link-button{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.page-link {
   border: none;
   line-height: 1.5em;
   &:active,
-  &:focus{
+  &:focus {
     outline: none;
   }
 }
 
 .next,
-.prev{
+.prev {
   padding: 5px 10px !important;
   border-radius: 15px !important;
   background: #e6f4f8 !important;

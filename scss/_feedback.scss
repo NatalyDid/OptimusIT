@@ -162,13 +162,8 @@
   .slick-dots {
     position: absolute;
     bottom: -40px;
-    left: 30%;
-    @media screen and (min-width: 768px) {
-      left: 43%;
-    }
-    @media screen and (min-width: 1200px) {
-      left: 45%;
-    }
+    left: 50%;
+    transform: translate(-35%);
     & li {
       color: $blue-link;
     }
