@@ -9,13 +9,37 @@
   }
 }
 
+.portfolio-item-title-wrapper {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 0 50px 0;
+  }
+}
+
+.portfolio-item-button {
+  & .btn-violet {
+    display: block;
+    width: auto;
+    padding: 12px 50px;
+    font-size: 14px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
 .portfolio-item-link-wrapper {
   padding: 50px 30px;
   background: $form-bg;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
   @media screen and (min-width: 1200px) {
     position: absolute;
     top: 290px;
-    right: calc(0.5*(100vw - 960px) - 20px);
+    right: calc(0.5 * (100vw - 960px) - 20px);
     width: 280px;
   }
   @media screen and (min-width: 1920px) {
@@ -23,16 +47,34 @@
   }
 }
 
-.portfolio-item-title{
+.portfolio-item-link {
+  display: block;
+  color: $dark-blue;
+  text-decoration: underline;
+  font-size: 12px;
+  line-height: 36px;
+  &:hover {
+    color: $dark-blue;
+    text-decoration: none;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 50%;
+  }
+}
+
+.portfolio-item-title {
   margin: 30px 0;
   padding: 0 10px;
   @media screen and (min-width: 768px) {
     margin: 70px 0 50px 0;
     padding: 0 20px;
   }
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+  }
 }
 
-.portfolio-item-title__text{
+.portfolio-item-title__text {
   @extend .font-bebas-regular;
   color: $turquoise;
   @media screen and (max-width: 767px) {
@@ -44,21 +86,24 @@
   width: 100px;
   height: 0;
   border-bottom: 5px solid $yellow-border;
+  @media screen and (min-width: 768px) {
+    width: 125px;
+  }
 }
 
-.portfolio-item-subtitle{
+.portfolio-item-subtitle {
   padding: 0 10px;
   @media screen and (min-width: 768px) {
     padding: 0 20px;
   }
 }
 
-.portfolio-item-subtitle__text{
+.portfolio-item-subtitle__text {
   @extend .font-opensans;
   color: $turquoise;
   font-size: 24px;
   line-height: 30px;
-  & span{
+  & span {
     font-family: $opensanssemibold;
   }
   @media screen and (min-width: 768px) {
@@ -67,25 +112,13 @@
   }
 }
 
-.portfolio-item-subtitle__line{
+.portfolio-item-subtitle__line {
   width: 100px;
   height: 0;
   border-bottom: 2px solid $yellow-border;
 }
 
-.portfolio-item-link {
-  display: block;
-  color: $dark-blue;
-  text-decoration: underline;
-  font-size: 12px;
-  line-height: 36px;
-  &:hover{
-    color: $dark-blue;
-    text-decoration: none;
-  }
-}
-
-.portfolio-item-description{
+.portfolio-item-description {
   padding: 0 10px;
   @media screen and (min-width: 768px) {
     padding: 0 20px;
@@ -98,11 +131,11 @@
   padding-left: 20px;
 }
 
-.portfolio-item-description__text{
+.portfolio-item-description__text {
   @extend .font-opensans-main;
   color: $grey;
   margin-bottom: 60px;
-  & p{
+  & p {
     text-indent: 20px;
   }
   @media screen and (min-width: 1200px) {
@@ -122,7 +155,7 @@
   }
 }
 
-.portfolio-item-slider{
+.portfolio-item-slider {
   margin: 40px auto;
   @media screen and (min-width: 768px) {
     width: 85%;
@@ -140,7 +173,7 @@
     }
   }
 
-  .slick-active{
+  .slick-active {
     list-style-image: url("../img/active-blue.png");
   }
 
@@ -179,12 +212,12 @@
   }
 }
 
-.portfolio-item-content{
+.portfolio-item-content {
   @media screen and (min-width: 1200px) {
     max-width: 960px;
     margin: 0 auto;
   }
-  & .link-button{
+  & .link-button {
     padding: 0 25px;
     @media screen and (min-width: 768px) {
       justify-content: flex-start;
@@ -194,7 +227,7 @@
       padding: 0;
     }
   }
-  & .btn-orange{
+  & .btn-orange {
     font-size: 14px;
     text-transform: none;
     text-align: center;
@@ -203,6 +236,9 @@
     margin: 60px 0 50px 0;
     @media screen and (min-width: 768px) {
       width: 180px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
     }
   }
 }

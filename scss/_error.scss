@@ -1,3 +1,22 @@
+.error404{
+  background-image: url("../img/pages/bg_pages-left.png");
+  background-repeat: no-repeat;
+  background-size: 180%;
+  background-position: 0 0;
+  @media screen and (min-width: 768px) {
+    background-size: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    background-size: 60%;
+  }
+  @media screen and (min-width: 1920px) {
+    background-image: url("../img/pages/bg_pages-left.png"), url("../img/pages/bg_pages-right.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50%, 50%;
+    background-position: left top, right top;
+  }
+}
+
 .container-error {
   padding: 0;
 }
@@ -63,12 +82,14 @@
 }
 
 .error-buttons{
-  & .btn-violet{
-    width: 140px ;
-    margin-right: 10px;
-  }
-  & .btn-transparent_violet{
-    width: 180px ;
+  @media screen and (min-width: 768px) {
+    & .btn-violet {
+      width: 140px;
+      margin-right: 10px;
+    }
+    & .btn-transparent_violet {
+      width: 180px;
+    }
   }
 }
 

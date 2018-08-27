@@ -144,7 +144,8 @@ button.focus, button:active.focus, button.active.focus{
   @extend .btn-transparent;
   color: $turquoise;
   border: 2px solid $turquoise;
-  &:hover{
+  &:hover,
+  &.active{
     background: $turquoise;
     color: $white;
   }
