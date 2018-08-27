@@ -166,9 +166,10 @@ button.focus, button:active.focus, button.active.focus{
   }
 }
 .page-down{
-  position: absolute;
+  position: fixed;
   left: calc(0.5*(100vw - 20px - 56px));
-  top: 90vh;
+  bottom: 30px;
+  z-index: 20;
   & .fa{
     padding: 10px;
     font-size: 30px;
@@ -207,5 +208,13 @@ h6{
   }
   &.active {
     color: $dark-blue;
+  }
+}
+
+label.error {
+  color: $yellow-font;
+  & + input,
+  & + textarea{
+    margin-top: 5px;
   }
 }

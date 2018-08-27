@@ -181,10 +181,13 @@
 
                 <div class="portfolio-item-subtitle">
                     <div class="portfolio-item-subtitle__text">
-                        <span>Aviwest</span> – video contribution uplink systems for live streaming.
+                        <span>Aviwest</span>
+                        – video contribution uplink systems for live streaming.
                     </div>
                     <div class="portfolio-item-subtitle__line"></div>
                 </div>
+
+                <!--<h3><span>contribution uplink systems for live streaming</span></h3>-->
 
                 <div class="portfolio-item-description">
                     <div class="portfolio-item-description__title">DONE:</div>
@@ -228,11 +231,20 @@
     <div class="container-fluid">
         <div class="footer-inner-wrapper">
             <div class="footer-form">
-                <form>
+                <form id="form_footer">
                     <div class="form-title">Leave Us a message</div>
-                    <input type="text" class="form-control" id="inputName" placeholder="Your Name*">
-                    <input type="text" class="form-control" id="inputEmail" placeholder="Your Email*">
-                    <textarea class="form-control" id="inputMessage1" rows="7" placeholder="Your message"></textarea>
+                    <div class="form-control-wrapper">
+                        <input type="text" class="form-control" id="inputName" name="input_name"
+                               placeholder="Your Name*">
+                    </div>
+                    <div class="form-control-wrapper">
+                        <input type="text" class="form-control" id="inputEmail" name="input_email"
+                               placeholder="Your Email*">
+                    </div>
+                    <div class="form-control-wrapper">
+                    <textarea class="form-control" id="inputMessage1" rows="7" name="input_message"
+                              placeholder="Your message"></textarea>
+                    </div>
                     <div class="form-text">* Required field</div>
                     <div class="form-button">
                         <button class="btn-transparent" type="submit">send</button>
@@ -345,7 +357,9 @@
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/slick.js"></script>
-<script src="js/header.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script src="js/common.js"></script>
 <script src="js/portfolio.js"></script>
+<script src="js/validation.js"></script>
 </body>
 </html>

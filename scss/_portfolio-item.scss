@@ -18,13 +18,17 @@
 }
 
 .portfolio-item-button {
-  & .btn-violet {
+  display: none;
+  @media screen and (min-width: 1200px) {
     display: block;
-    width: auto;
-    padding: 12px 50px;
-    font-size: 14px;
-    &:hover {
-      text-decoration: none;
+    & .btn-violet {
+      display: block;
+      width: auto;
+      padding: 12px 50px;
+      font-size: 14px;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }
@@ -71,6 +75,7 @@
   }
   @media screen and (min-width: 1200px) {
     margin: 0;
+    padding: 0;
   }
 }
 
@@ -96,6 +101,9 @@
   @media screen and (min-width: 768px) {
     padding: 0 20px;
   }
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+  }
 }
 
 .portfolio-item-subtitle__text {
@@ -109,13 +117,28 @@
   @media screen and (min-width: 768px) {
     font-size: 30px;
     line-height: 36px;
+    display: inline;
   }
 }
 
 .portfolio-item-subtitle__line {
-  width: 100px;
+  width: 100%;
   height: 0;
   border-bottom: 2px solid $yellow-border;
+  margin-top: 10px;
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  //@media screen and (min-width: 768px) {
+  //  margin-top: 0;
+  //  width: 50px;
+  //  display: inline-block;
+  //  margin-bottom: 10px;
+  //}
+  //@media screen and (min-width: 1200px) {
+  //  width: 75px;
+  //}
 }
 
 .portfolio-item-description {
@@ -240,5 +263,37 @@
     @media screen and (min-width: 1200px) {
       margin-bottom: 0;
     }
+  }
+}
+
+.portfolio-item-subtitle {
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  white-space: nowrap;
+  @media screen and (min-width: 768px) {
+    &:after{
+      content: '';
+      display: inline-block;
+      position: relative;
+      top: -1px;
+      width: 100%;
+      height: 2px;
+      vertical-align: middle;
+      background: black;
+      left: 10px;
+      margin-right: -50%;
+      background: $yellow-border;
+    }
+  }
+}
+
+.portfolio-item-subtitle__text {
+  display: inline-block;
+  //vertical-align: middle;
+  white-space: normal;
+  max-width: 80%;
+  @media screen and (min-width: 1200px) {
+    max-width: 100%;
   }
 }

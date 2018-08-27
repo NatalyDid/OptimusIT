@@ -169,10 +169,11 @@ button.focus, button:active.focus, button.active.focus {
     display: none; }
 
 .page-down {
-  position: absolute;
+  position: fixed;
   left: -webkit-calc(0.5*(100vw - 20px - 56px));
   left: calc(0.5*(100vw - 20px - 56px));
-  top: 90vh; }
+  bottom: 30px;
+  z-index: 20; }
   .page-down .fa {
     padding: 10px;
     font-size: 30px;
@@ -202,6 +203,12 @@ h6 {
     color: #30b4d9; }
   .breadcrumb-item.active {
     color: #30b4d9; }
+
+label.error {
+  color: #fbd359; }
+  label.error + input,
+  label.error + textarea {
+    margin-top: 5px; }
 
 .header {
   background: #0f657f; }
@@ -481,19 +488,27 @@ input[type='checkbox'] {
 
 .form-title {
   margin-bottom: 30px; }
+  @media screen and (min-width: 768px) {
+    .form-title {
+      margin-bottom: 45px; } }
+  @media screen and (min-width: 1200px) {
+    .form-title {
+      margin-bottom: 70px; } }
 
 .form-text {
   font-size: 12px;
   color: #ffffff; }
 
+.form-control-wrapper {
+  margin-top: 20px; }
+  @media screen and (min-width: 768px) {
+    .form-control-wrapper {
+      margin-top: 30px; } }
+
 .form-control {
   -webkit-border-radius: 0;
   border-radius: 0;
-  margin-bottom: 20px;
   border: none; }
-  @media screen and (min-width: 768px) {
-    .form-control {
-      margin-bottom: 30px; } }
 
 .form-button {
   width: 100%;
@@ -2675,6 +2690,9 @@ input[type='checkbox'] {
   text-indent: 20px;
   margin: 30px 0; }
 
+.row-form {
+  margin-top: 30px; }
+
 .contact-form {
   margin-bottom: 50px; }
   .contact-form .form-control {
@@ -2748,7 +2766,8 @@ input[type='checkbox'] {
   flex-basis: 100%;
   padding: 30px 10px 20px 10px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border: 2px solid transparent; }
   .portfolio .slider-projects-item:nth-child(even) {
     background: #30b4d9; }
   .portfolio .slider-projects-item:nth-child(odd) {
@@ -2916,13 +2935,18 @@ input[type='checkbox'] {
     justify-content: space-between;
     margin: 70px 0 50px 0; } }
 
-.portfolio-item-button .btn-violet {
-  display: block;
-  width: auto;
-  padding: 12px 50px;
-  font-size: 14px; }
-  .portfolio-item-button .btn-violet:hover {
-    text-decoration: none; }
+.portfolio-item-button {
+  display: none; }
+  @media screen and (min-width: 1200px) {
+    .portfolio-item-button {
+      display: block; }
+      .portfolio-item-button .btn-violet {
+        display: block;
+        width: auto;
+        padding: 12px 50px;
+        font-size: 14px; }
+        .portfolio-item-button .btn-violet:hover {
+          text-decoration: none; } }
 
 .portfolio-item-link-wrapper {
   padding: 50px 30px;
@@ -2969,7 +2993,8 @@ input[type='checkbox'] {
       padding: 0 20px; } }
   @media screen and (min-width: 1200px) {
     .portfolio-item-title {
-      margin: 0; } }
+      margin: 0;
+      padding: 0; } }
 
 .portfolio-item-title__text {
   color: #0f657f; }
@@ -2990,6 +3015,9 @@ input[type='checkbox'] {
   @media screen and (min-width: 768px) {
     .portfolio-item-subtitle {
       padding: 0 20px; } }
+  @media screen and (min-width: 1200px) {
+    .portfolio-item-subtitle {
+      padding: 0; } }
 
 .portfolio-item-subtitle__text {
   color: #0f657f;
@@ -3000,12 +3028,18 @@ input[type='checkbox'] {
   @media screen and (min-width: 768px) {
     .portfolio-item-subtitle__text {
       font-size: 30px;
-      line-height: 36px; } }
+      line-height: 36px;
+      display: inline; } }
 
 .portfolio-item-subtitle__line {
-  width: 100px;
+  width: 100%;
   height: 0;
-  border-bottom: 2px solid #ffcf27; }
+  border-bottom: 2px solid #ffcf27;
+  margin-top: 10px;
+  display: block; }
+  @media screen and (min-width: 768px) {
+    .portfolio-item-subtitle__line {
+      display: none; } }
 
 .portfolio-item-description {
   padding: 0 10px; }
@@ -3113,3 +3147,30 @@ input[type='checkbox'] {
   @media screen and (min-width: 1200px) {
     .portfolio-item-content .btn-orange, .portfolio-item-content .btn-orange_smaller {
       margin-bottom: 0; } }
+
+.portfolio-item-subtitle {
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  white-space: nowrap; }
+  @media screen and (min-width: 768px) {
+    .portfolio-item-subtitle:after {
+      content: '';
+      display: inline-block;
+      position: relative;
+      top: -1px;
+      width: 100%;
+      height: 2px;
+      vertical-align: middle;
+      background: black;
+      left: 10px;
+      margin-right: -50%;
+      background: #ffcf27; } }
+
+.portfolio-item-subtitle__text {
+  display: inline-block;
+  white-space: normal;
+  max-width: 80%; }
+  @media screen and (min-width: 1200px) {
+    .portfolio-item-subtitle__text {
+      max-width: 100%; } }

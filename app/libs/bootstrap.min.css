@@ -4583,6 +4583,16 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     border-radius: .25rem
 }
 
+@media screen and (max-width: 767px) {
+    .breadcrumb {
+        display: inline-block;
+        line-height: 1em;
+    }
+    .breadcrumb-item{
+        display: inline;
+    }
+}
+
 .breadcrumb-item + .breadcrumb-item {
     padding-left: .5rem
 }

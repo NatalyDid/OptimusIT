@@ -70,4 +70,12 @@ $(function () {
     slideDetect();
 
     $(window).on('resize', slideDetect);
+
+    $('.page-down').on('click', function () {
+        console.log('ggg');
+        //$('html, body').animate({
+            window.scrollBy(0, window.innerHeight)
+        //}, 500)
+    });
+
 });

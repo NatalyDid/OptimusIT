@@ -165,20 +165,28 @@
                 </div>
                 <div class="contact-title__line"></div>
             </div>
-            <div class="row">
+            <div class="row ">
                 <div class="contact-description col-12 col-md-6 col-lg-8">
                     <div class="contact-message">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
                         et dolore magna aliqua.
                     </div>
                     <div class="contact-form">
-                        <form>
-                            <input type="text" class="form-control" id="inputContactName" placeholder="Your Name*">
-                            <input type="text" class="form-control" id="inputContactEmail" placeholder="Your Email*">
-                            <textarea class="form-control" id="inputContactMessage1" rows="7"
+                        <form id="form_contact">
+                            <div class="form-control-wrapper">
+                                <input type="text" class="form-control" id="inputContactName" name="input_name"
+                                       placeholder="Your Name*">
+                            </div>
+                            <div class="form-control-wrapper">
+                                <input type="text" class="form-control" id="inputContactEmail" name="input_email"
+                                       placeholder="Your Email*">
+                            </div>
+                            <div class="form-control-wrapper">
+                                <textarea class="form-control" id="inputContactMessage1" name="input_message" rows="7"
                                       placeholder="Your message"></textarea>
-
-                            <div class="row">
+                            </div>
+                            <div class="row row-form">
                                 <div class="form-text col-5 col-md-12 col-xl-5">* Required field</div>
                                 <div class="form-button col-7 col-md-12 col-xl-7">
                                     <button class="btn-orange" type="submit">send</button>
@@ -250,16 +258,24 @@
         </div>
     </div>
 </div>
-</div>
 <div class="footer">
     <div class="container-fluid">
         <div class="footer-inner-wrapper">
             <div class="footer-form">
-                <form>
+                <form id="form_footer">
                     <div class="form-title">Leave Us a message</div>
-                    <input type="text" class="form-control" id="inputName" placeholder="Your Name*">
-                    <input type="text" class="form-control" id="inputEmail" placeholder="Your Email*">
-                    <textarea class="form-control" id="inputMessage1" rows="7" placeholder="Your message"></textarea>
+                    <div class="form-control-wrapper">
+                        <input type="text" class="form-control" id="inputName" name="input_name"
+                               placeholder="Your Name*">
+                    </div>
+                    <div class="form-control-wrapper">
+                        <input type="text" class="form-control" id="inputEmail" name="input_email"
+                               placeholder="Your Email*">
+                    </div>
+                    <div class="form-control-wrapper">
+                    <textarea class="form-control" id="inputMessage1" rows="7" name="input_message"
+                              placeholder="Your message"></textarea>
+                    </div>
                     <div class="form-text">* Required field</div>
                     <div class="form-button">
                         <button class="btn-transparent" type="submit">send</button>
@@ -371,6 +387,8 @@
 </div>
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script src="js/header.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/validation.js"></script>
 </body>
 </html>
