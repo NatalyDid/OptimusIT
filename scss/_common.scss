@@ -213,8 +213,7 @@ h6{
 
 label.error {
   color: $yellow-font;
-  & + input,
-  & + textarea{
-    margin-top: 5px;
-  }
+  position: absolute;
+  top: 100%;
+  font-size: 13px;
 }
