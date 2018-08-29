@@ -1,9 +1,8 @@
 $(function () {
 
-    $('.main-menu>li').on('click', function () {
-        $('.main-menu').find('.items-child').hide();
+    $('.main-menu.header-menu>li').on('click', function () {
+        $('.main-menu.header-menu').find('.items-child').hide();
         $(this).find('.items-child').slideToggle();
-        console.log('aaa');
     });
     $('.main-menu .menu-items a').click(function (e) {
         e.preventDefault();

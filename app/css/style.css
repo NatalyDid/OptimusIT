@@ -2434,30 +2434,43 @@ input[type='checkbox'] {
     margin-bottom: 0; }
 
 .article-item-title {
-  margin-bottom: 30px; }
-  @media screen and (min-width: 768px) {
-    .article-item-title {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-      justify-content: space-between; } }
+  margin-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap; }
+  @media screen and (min-width: 1200px) {
+    .article-item-title:after {
+      content: '';
+      display: inline-block;
+      position: relative;
+      top: -4px;
+      width: 100%;
+      height: 2px;
+      vertical-align: middle;
+      background: black;
+      left: 10px;
+      margin-right: -50%;
+      background: #ffcf27; } }
 
-@media screen and (min-width: 1200px) {
-  .article-item-title__text {
-    padding-left: 20px; } }
+.article-item-title__text {
+  display: inline-block;
+  line-height: 30px;
+  white-space: normal;
+  max-width: 80%; }
+  @media screen and (min-width: 1200px) {
+    .article-item-title__text {
+      max-width: 100%;
+      padding-left: 20px; } }
 
 .article-item-title__line {
+  width: 100%;
   height: 0;
-  border-bottom: 1px solid #ffcf27;
-  width: auto; }
+  border-bottom: 2px solid #ffcf27;
+  margin-top: 10px;
+  display: block; }
+  @media screen and (min-width: 1200px) {
+    .article-item-title__line {
+      display: none; } }
 
 .article-item-subtitle {
   margin: 25px 0;
@@ -3039,7 +3052,7 @@ input[type='checkbox'] {
   border-bottom: 2px solid #ffcf27;
   margin-top: 10px;
   display: block; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     .portfolio-item-subtitle__line {
       display: none; } }
 
@@ -3155,7 +3168,7 @@ input[type='checkbox'] {
   position: relative;
   margin: 0;
   white-space: nowrap; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     .portfolio-item-subtitle:after {
       content: '';
       display: inline-block;
