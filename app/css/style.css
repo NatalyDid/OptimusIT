@@ -831,7 +831,8 @@ input[type='checkbox'] {
   padding: 0; }
 
 .slider-header-wrapper {
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   @media screen and (min-width: 768px) {
     .slider-header-wrapper .btn-orange, .slider-header-wrapper .btn-orange_smaller {
       width: 300px;
@@ -898,13 +899,6 @@ input[type='checkbox'] {
     .slide-info {
       padding-left: -webkit-calc(0.5*(100vw - 940px));
       padding-left: calc(0.5*(100vw - 940px)); }
-      .slide-info:before {
-        content: url("../img/slides/bg-polygon_left.png");
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%; }
       .slide-info:after {
         content: '';
         display: block;
@@ -1061,12 +1055,10 @@ input[type='checkbox'] {
 .img7 {
   background-image: url("../img/slides/slide-7.jpg"); }
 
-.polygon {
-  width: 100%;
-  height: 100%;
-  background: url("../img/slides/bg-polygon_right.png") no-repeat 100% 0;
-  -webkit-background-size: 120% 120%;
-  background-size: 120%; }
+.aaa {
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 @media screen and (min-width: 768px) {
   .business {
@@ -1530,10 +1522,21 @@ input[type='checkbox'] {
   height: 0;
   border-bottom: 5px solid #ffcf27; }
 
-@media screen and (min-width: 1200px) {
-  .optimal-working-diagram {
-    max-width: 830px;
-    margin: 0 auto; } }
+.optimal-working-diagram {
+  position: relative;
+  width: 100%;
+  height: 300px; }
+  @media screen and (min-width: 768px) {
+    .optimal-working-diagram {
+      height: 760px; } }
+  @media screen and (min-width: 1200px) {
+    .optimal-working-diagram {
+      max-width: 830px;
+      margin: 0 auto;
+      height: 570px; } }
+  @media screen and (min-width: 1920px) {
+    .optimal-working-diagram {
+      height: 700px; } }
 
 .optimal-working-diagram-image {
   background: url("../img/diagram-1.svg") no-repeat;
@@ -1673,6 +1676,11 @@ input[type='checkbox'] {
     .projects .portfolio-projects-info {
       background: transparent;
       padding: 0; } }
+
+.bbb {
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 .feedback {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(80%, #fff), to(#e8f6fb));
@@ -1826,6 +1834,11 @@ input[type='checkbox'] {
 
 .feedback .slick-active {
   list-style-image: url("../img/active-blue.png"); }
+
+.ccc {
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 .benefits-top {
   background: #0f657f;
@@ -2256,13 +2269,19 @@ input[type='checkbox'] {
       width: 90%;
       padding: 70px 0 20px 95px; } }
 
+.ddd {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
 .online-contact {
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
   position: fixed;
   right: -70px;
-  bottom: 200px; }
+  bottom: 200px;
+  z-index: 30; }
   .online-contact .fa {
     font-size: 30px;
     -webkit-border-radius: 50%;
@@ -2278,7 +2297,7 @@ input[type='checkbox'] {
     color: #2ecc71;
     border: 3px solid #2ecc71;
     left: -10px;
-    z-index: 1; }
+    z-index: 50; }
   .online-contact .fa-comments {
     padding: 8px;
     color: #ffd466;
@@ -3203,3 +3222,8 @@ input[type='checkbox'] {
   @media screen and (min-width: 1200px) {
     .portfolio-item-subtitle__text {
       max-width: 100%; } }
+
+.eee {
+  position: absolute;
+  top: 0;
+  left: 0; }

@@ -61,31 +61,35 @@ $(document).ready(function () {
         }, 100);
     });
 
-    $('.portfolio-item-slider').slick({
-        dots: true,
-        arrows: true,
-        prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>',
-        nextArrow: '<button type="button" class="slick-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>',
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    // slidesToShow: 2,
-                    // slidesToScroll: 1,
-                    arrows: true
+    var portfolio_item_slider = $('.portfolio-item-slider');
+    if (portfolio_item_slider.length) {
+        portfolio_item_slider.slick({
+            dots: true,
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>',
+            nextArrow: '<button type="button" class="slick-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>',
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        // slidesToShow: 2,
+                        // slidesToScroll: 1,
+                        arrows: true
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        // slidesToShow: 1,
+                        // slidesToScroll: 1,
+                        arrows: false
+                    }
                 }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    // slidesToShow: 1,
-                    // slidesToScroll: 1,
-                    arrows: false
-                }
-            }
-        ]
-    });
+            ]
+        });
+        $(".slick-slide").removeClass("eee");
+    }
 
 });

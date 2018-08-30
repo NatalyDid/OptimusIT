@@ -3,6 +3,7 @@
   position: fixed;
   right: -70px;
   bottom: 200px;
+  z-index: 30;
   & .fa {
     font-size: 30px;
     border-radius: 50%;
@@ -16,7 +17,7 @@
     color: $light-green;
     border: 3px solid $light-green;
     left: -10px;
-    z-index: 1;
+    z-index: 50;
   }
   & .fa-comments {
     padding: 8px;

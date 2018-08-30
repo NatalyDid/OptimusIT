@@ -4,6 +4,7 @@
 
 .slider-header-wrapper {
   text-align: center;
+  position: relative;
   .btn-orange {
     @media screen and (min-width: 768px) {
       width: 300px;
@@ -57,14 +58,14 @@
   }
   @media screen and (min-width: 1200px) {
     padding-left: calc(0.5*(100vw - 940px));
-    &:before{
-      content: url("../img/slides/bg-polygon_left.png");
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-    }
+    //&:before{
+    //  content: url("../img/slides/bg-polygon_left.png");
+    //  position: absolute;
+    //  left: 0;
+    //  top: 0;
+    //  width: 100%;
+    //  height: 100%;
+    //}
     &:after {
       content: '';
       display: block;
@@ -239,9 +240,17 @@
   background-image: url('../img/slides/slide-7.jpg');
 }
 
-.polygon{
-  width: 100%;
-  height: 100%;
-  background: url("../img/slides/bg-polygon_right.png") no-repeat 100% 0;
-  background-size: 120%;
+//.polygon{
+//  width: 100%;
+//  height: 100%;
+//  background: url("../img/slides/bg-polygon_right.png") no-repeat 100% 0;
+//  background-size: 120%;
+//}
+
+.aaa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  //width: 100%;
+  //min-height: 550px;
 }
