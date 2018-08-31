@@ -827,6 +827,10 @@ input[type='checkbox'] {
       background-size: 100%;
       background-position: 0 -75px; } }
 
+.slider-block {
+  height: -webkit-calc(100vh - 70px);
+  height: calc(100vh - 70px); }
+
 .container-slider {
   padding: 0; }
 
@@ -1060,17 +1064,17 @@ input[type='checkbox'] {
   top: 0;
   left: 0; }
 
-@media screen and (min-width: 768px) {
-  .business {
-    padding: 100px 35px 0 35px; } }
-
-@media screen and (min-width: 1200px) {
-  .business {
-    padding: 175px 120px; } }
-
-@media screen and (min-width: 1920px) {
-  .business {
-    padding: 190px 390px; } }
+.business {
+  height: 100vh; }
+  @media screen and (min-width: 768px) {
+    .business {
+      padding: 100px 35px 0 35px; } }
+  @media screen and (min-width: 1200px) {
+    .business {
+      padding: 175px 120px; } }
+  @media screen and (min-width: 1920px) {
+    .business {
+      padding: 190px 390px; } }
 
 @media screen and (min-width: 1200px) {
   .business-inner-wrapper {
@@ -1313,6 +1317,7 @@ input[type='checkbox'] {
     padding-left: 60px; } }
 
 .intro {
+  height: 100vh;
   background: -webkit-gradient(linear, left top, right top, from(#11bfc0), to(#30b4d9));
   background: -webkit-linear-gradient(left, #11bfc0, #30b4d9);
   background: -o-linear-gradient(left, #11bfc0, #30b4d9);
