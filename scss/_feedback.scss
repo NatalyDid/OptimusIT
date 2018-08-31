@@ -1,6 +1,9 @@
 .feedback {
   background: linear-gradient(0deg, #fff 80%, #e8f6fb 100%);
   padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    height: 100vh;
+  }
 }
 
 .feedback-inner-wrapper {
@@ -174,10 +177,3 @@
   }
 }
 
-.ccc {
-  position: absolute;
-  top: 0;
-  left: 0;
-  //width: 100%;
-  //min-height: 550px;
-}

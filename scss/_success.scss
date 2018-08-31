@@ -1,6 +1,9 @@
 .success{
   background: $turquoise;
   border-top: 10px solid $green;
+  @media screen and (min-width: 1200px) {
+    height: 100vh;
+  }
   .slick-arrow {
     position: absolute;
     top: -87px;

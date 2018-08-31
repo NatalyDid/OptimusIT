@@ -1,10 +1,11 @@
 .business {
-  height: 100vh;
+
   @media screen and (min-width: 768px) {
     padding: 100px 35px 0 35px;
   }
   @media screen and (min-width: 1200px) {
     padding: 175px 120px;
+    height: 100vh;
   }
   @media screen and (min-width: 1920px) {
     padding: 190px 390px;
@@ -25,9 +26,6 @@
 
 .container-business {
   padding: 0;
-  //@media screen and (min-width: 768px) {
-  //  padding: 0 35px;
-  //}
 }
 
 .business-title {
@@ -121,13 +119,6 @@
   border-bottom: 5px solid $yellow-border;
 }
 
-/*.row-business-info{
-  margin: 0;
-  @media screen and (min-width: 1200px) {
-    padding-left: 40px;
-  }
-}*/
-
 .business-info {
   padding: 15px;
   @media screen and (min-width: 1200px) {
@@ -202,12 +193,6 @@
   line-height: 26.75px;
   text-transform: uppercase;
 }
-
-//.business-wrapper {
-//  @media screen and (min-width: 1200px) {
-//    display: flex;
-//  }
-//}
 
 .business-info-row {
   display: flex;

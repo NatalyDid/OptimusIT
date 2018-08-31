@@ -119,10 +119,11 @@ input[type='checkbox'] {
     & a {
       @extend .font-opensans;
       color: $light-blue;
-      padding-left: 20px;
-      height: 45px;
-      line-height: 45px;
+      //padding-left: 20px;
+      //height: 45px;
+      //line-height: 45px;
       display: block;
+      padding: 15px 0 15px 20px;
       &:hover, :active, :focus{
         background: $light-turquoise;
       }

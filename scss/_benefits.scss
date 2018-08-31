@@ -1,3 +1,9 @@
+.benefits{
+  @media screen and (min-width: 1200px) {
+    height: 100vh;
+  }
+}
+
 .benefits-top {
   background: $turquoise;
   padding: 50px 25px;
@@ -63,16 +69,6 @@
     padding: 0 55px;
   }
 }
-
-//.benefits-item-wrapper{
-//  display: flex;
-//  flex-direction: column;
-//  width: 85%;
-//  @media screen and (min-width: 768px) {
-//    flex-direction: row;
-//    justify-content: center;
-//  }
-//}
 
 .benefits-item {
   position: relative;
@@ -193,6 +189,7 @@
   width: 100%;
   @media screen and (min-width: 768px) {
     bottom: 130px;
+    width: auto;
   }
 }
 

@@ -1,3 +1,9 @@
+.optimal-working{
+  @media screen and (min-width: 1200px) {
+    height: 100vh;
+  }
+}
+
 .container-optimal {
   padding: 0;
   position: relative;
@@ -9,6 +15,10 @@
       margin-top: 0;
     }
   }
+}
+
+.optimal-working {
+  position: relative;
 }
 
 .optimal-working-inner-wrapper{
@@ -64,7 +74,6 @@
     height: 760px;
   }
   @media screen and (min-width: 1200px) {
-    max-width: 830px;
     margin: 0 auto;
     height: 570px;
   }
@@ -73,28 +82,18 @@
   }
 }
 .optimal-working-diagram-image {
-  background: url("../img/diagram-1.svg") no-repeat;
-  background-position: -180px 0;
-  background-size: 200%;
-  height: 300px;
-  @media screen and (min-width: 500px) {
-    background-size: 100%;
-    background-position: 10px 0;
-  }
+  background: url("../img/diagram-1.svg") center / 100% no-repeat;
+  background-origin: content-box;
+  padding: 25px 70px 25px 25px;
+  background-size: 100%;
+  margin: 0 auto;
+  max-width: 790px;
+  max-height: 900px;
+  width: 595px;
+  height: 685px;
   @media screen and (min-width: 768px) {
-    background-position: 40px 0;
-    background-size: 90%;
-    height: 760px;
-  }
-  @media screen and (min-width: 1200px) {
-    background-position: 40px 0;
-    background-size: 90%;
-    height: 570px;
-  }
-  @media screen and (min-width: 1920px) {
-    background-position: 40px 0;
-    background-size: 90%;
-    height: 700px;
+    height: 900px;
+    width: 790px;
   }
 }
 

@@ -4,10 +4,6 @@
 }
 
 @import "../libs/bootstrap.min.css";
-//@import "../libs/cropper.min.css";
-//@import "../libs/pikaday.css";
-//@import "../libs/time-picker.css";
-//@import "../libs/jquery.timepicker.css";
 @import "../libs/simplePagination.css";
 @import "../libs/slick.css";
 @import "../fonts/stylesheet.css";
@@ -34,5 +30,8 @@
 @import "contacts";
 @import "portfolio";
 @import "portfolio-item";
-//@import "impressum";
 
+/*
+div {
+  border: 1px dashed red;
+}*/

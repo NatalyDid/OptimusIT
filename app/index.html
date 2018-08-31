@@ -10,7 +10,7 @@
     <script src="../gulpfile.js"></script>
 </head>
 <body>
-<div class="header">
+<div data-scroll-number="1" class="header">
     <div class="container-fluid container-header">
         <div class="d-flex justify-content-between header-inner-wrapper">
             <div class="burger d-block d-lg-none">
@@ -161,8 +161,8 @@
     <div class="container-fluid container-slider">
         <div class="slider-row">
             <div class="slider-header-wrapper">
-                <div class="aaa row">
-                    <!--<div class="aaa_inner-wrapper">-->
+                <div class="hidden row">
+                    <!--<div class="hidden_inner-wrapper">-->
                     <div class="order-2 col-lg-7 col-12 slider-img img1">
                         <div class="polygon"></div>
                     </div>
@@ -178,7 +178,7 @@
                         <!--</div>-->
                     </div>
                 </div>
-                <div class="aaa row">
+                <div class="hidden row">
                     <div class="order-2 col-lg-7 col-12 slider-img img2">
 
                     </div>
@@ -189,7 +189,7 @@
                         <button type="button" class="btn-orange">get a brief</button>
                     </div>
                 </div>
-                <div class="aaa row">
+                <div class="hidden row">
                     <div class="order-2 col-lg-7 col-12 slider-img img3">
                     </div>
                     <div class="slide-info order-1 col-lg-5 col-12">
@@ -199,7 +199,7 @@
                         <button type="button" class="btn-orange">get a brief</button>
                     </div>
                 </div>
-                <div class="aaa row">
+                <div class="hidden row">
                     <div class="order-2 col-lg-7 col-12 slider-img img4">
 
                     </div>
@@ -210,7 +210,7 @@
                         <button type="button" class="btn-orange">get a brief</button>
                     </div>
                 </div>
-                <div class="aaa row">
+                <div class="hidden row">
                     <div class="order-2 col-lg-7 col-12 slider-img img5">
                     </div>
                     <div class="slide-info order-1 col-lg-5 col-12">
@@ -221,7 +221,7 @@
                         <button type="button" class="btn-orange_smaller">Clarify the tasks for our team</button>
                     </div>
                 </div>
-                <div class="aaa row">
+                <div class="hidden row">
                     <div class="order-2 col-lg-7 col-12 slider-img img6">
 
                     </div>
@@ -232,7 +232,7 @@
                         <button type="button" class="btn-orange">Get a discount</button>
                     </div>
                 </div>
-                <div class="aaa row">
+                <div class="hidden row">
                     <div class="order-2 col-lg-7 col-12 slider-img img7">
 
                     </div>
@@ -247,10 +247,12 @@
                 </div>
 
             </div>
+            <div class="slider_bg slider_bg--left"></div>
+            <div class="slider_bg slider_bg--right d-none d-lg-block"></div>
         </div>
     </div>
 </div>
-<div class="business">
+<div data-scroll-number="2" class="business">
     <div class="container-fluid container-business">
         <div class="business-inner-wrapper ">
             <div class="business-title ">
@@ -299,7 +301,7 @@
         </div>
     </div>
 </div>
-<div class="intro">
+<div data-scroll-number="3" class="intro">
     <div class="container-fluid">
         <canvas id="canvas" class="d-none d-lg-block"></canvas>
         <div class="row row-intro">
@@ -354,7 +356,7 @@
     </div>
 
 </div>
-<div class="optimal-working">
+<div data-scroll-number="4" class="optimal-working">
     <div class="container-fluid container-optimal">
         <div class="optimal-working-header">
             <div class="optimal-working-inner-wrapper">
@@ -371,18 +373,16 @@
             </div>
         </div>
         <div class="optimal-working-diagram" id="optimal-working-diagram">
-            <!--<div class="optimal-working-diagram-image"></div>-->
-            <img src="img/diagram-1.svg">
-            <div class="image-increase d-block d-md-none">
-                <i class="fa fa-search" aria-hidden="true"></i>
-            </div>
+            <div class="optimal-working-diagram-image"></div>
+            <!--<img src="img/diagram-1.svg">-->
+
         </div>
     </div>
-    <div class="image-increase d-block d-sm-none">
+    <div class="image-increase d-block d-md-none">
         <i class="fa fa-search" aria-hidden="true"></i>
     </div>
 </div>
-<div class="services">
+<div data-scroll-number="5" class="services">
     <div class="container">
         <div class="services-diagram">
             <img src="img/diagram-2-vertical-01.svg" class="img-fluid d-lg-none">
@@ -390,7 +390,7 @@
         </div>
     </div>
 </div>
-<div class="projects">
+<div data-scroll-number="6" class="projects">
     <div class="container-fluid container-projects">
         <div class="projects-inner-wrapper">
             <div class="projects-header">
@@ -406,7 +406,7 @@
             </div>
             <div class="portfolio-projects-info">
                 <div class="slider-projects-wrapper">
-                    <div class="bbb slider-projects-item ">
+                    <div class="hidden slider-projects-item ">
                         <div class="slide-project-info">
                             <div class="slide-project-title">TOUCHNOTE</div>
                             <div class="slide-project-subtitle">Sending real postcards from your devices</div>
@@ -422,7 +422,7 @@
                         </div>
                         <a href="" class="slider-project-site"> www.touchnote.com</a>
                     </div>
-                    <div class="bbb slider-projects-item ">
+                    <div class="hidden slider-projects-item ">
                         <div class="slide-project-info">
                             <div class="slide-project-title">AVIWEST</div>
                             <div class="slide-project-subtitle">Video contribution uplink systems for live streaming
@@ -438,7 +438,7 @@
                         </div>
                         <a href="" class="slider-project-site">www.aviwest.com</a>
                     </div>
-                    <div class="bbb slider-projects-item ">
+                    <div class="hidden slider-projects-item ">
                         <div class="slide-project-info">
                             <div class="slide-project-title">PZU</div>
                             <div class="slide-project-subtitle">Insurance company e-shop</div>
@@ -453,7 +453,7 @@
                         </div>
                         <a href="" class="slider-project-site">www.pzu.com.ua</a>
                     </div>
-                    <div class="bbb slider-projects-item ">
+                    <div class="hidden slider-projects-item ">
                         <div class="slide-project-info">
                             <div class="slide-project-title">DHL</div>
                             <div class="slide-project-subtitle">(Deutsche Post DHL Group) - сorporate Net</div>
@@ -473,7 +473,7 @@
         </div>
     </div>
 </div>
-<div class="feedback">
+<div data-scroll-number="7" class="feedback">
     <div class="container-fluid">
         <div class="feedback-inner-wrapper">
             <div class="feedback-header">
@@ -488,7 +488,7 @@
 
             <div class="feedback-info">
                 <div class="slider-feedback-wrapper">
-                    <div class="ccc slider-feedback-item">
+                    <div class="hidden slider-feedback-item">
                         <div class="slider-feedback-img text-center">
                             <img src="img/client-logos/teso-college.svg" class="img-fluid">
                         </div>
@@ -507,7 +507,7 @@
                             <a href="" class="slider-feedback-site">eiusmodtempor.com</a>
                         </div>
                     </div>
-                    <div class="ccc slider-feedback-item">
+                    <div class="hidden slider-feedback-item">
                         <div class="slider-feedback-img ">
                             <img src="img/client-logos/bla-bla-doctor.svg" class="img-fluid">
                         </div>
@@ -525,7 +525,7 @@
                             <a href="" class="slider-feedback-site">eiusmodtempor.com</a>
                         </div>
                     </div>
-                    <div class="ccc slider-feedback-item">
+                    <div class="hidden slider-feedback-item">
                         <div class="slider-feedback-img text-center">
                             <img src="img/client-logos/amia.svg" class="img-fluid">
                         </div>
@@ -542,7 +542,7 @@
                             <a href="" class="slider-feedback-site">eiusmodtempor.com</a>
                         </div>
                     </div>
-                    <div class="ccc slider-feedback-item">
+                    <div class="hidden slider-feedback-item">
                         <div class="slider-feedback-img text-center">
                             <img src="img/client-logos/dolphin%20yachts.svg" class="img-fluid">
                         </div>
@@ -560,7 +560,7 @@
                             <a href="" class="slider-feedback-site">eiusmodtempor.com</a>
                         </div>
                     </div>
-                    <div class="ccc slider-feedback-item">
+                    <div class="hidden slider-feedback-item">
                         <div class="slider-feedback-img ">
                             <img src="img/client-logos/soeus.svg" class="img-fluid">
                         </div>
@@ -578,7 +578,7 @@
                             <a href="" class="slider-feedback-site">eiusmodtempor.com</a>
                         </div>
                     </div>
-                    <div class="ccc slider-feedback-item">
+                    <div class="hidden slider-feedback-item">
                         <div class="slider-feedback-img text-center">
                             <img src="img/client-logos/plids.svg" class="img-fluid">
                         </div>
@@ -597,7 +597,7 @@
                             <a href="" class="slider-feedback-site">eiusmodtempor.com</a>
                         </div>
                     </div>
-                    <div class="ccc slider-feedback-item">
+                    <div class="hidden slider-feedback-item">
                         <div class="slider-feedback-img text-center">
                             <img src="img/client-logos/loumic%20montreal.svg" class="img-fluid">
                         </div>
@@ -621,7 +621,7 @@
         </div>
     </div>
 </div>
-<div class="benefits">
+<div data-scroll-number="8" class="benefits">
     <div class="benefits-top">
         <div class="container-fluid">
             <div class="benefits-inner-wrapper">
@@ -736,7 +736,7 @@
         </div>
     </div>
 </div>
-<div class="success">
+<div data-scroll-number="9" class="success">
     <div class="container-fluid container-success">
         <div class="success-title">
             Our <span>company</span>
@@ -744,31 +744,31 @@
         </div>
         <div class="success-gallery">
             <div class="slider-success-wrapper">
-                <div class="ddd">
+                <div class="hidden">
                     <!--<div class="slider-success-img success-img1">-->
                     <!--</div>-->
                     <img src="img/success/photo2.png" class="img-fluid">
                 </div>
-                <div class="ddd">
+                <div class="hidden">
                     <img src="img/success/photo3.png" class="img-fluid">
                 </div>
-                <div class="ddd">
+                <div class="hidden">
                     <img src="img/success/photo4.png" class="img-fluid">
                 </div>
-                <div class="ddd">
+                <div class="hidden">
                     <img src="img/success/photo5.png" class="img-fluid">
                 </div>
-                <div class="ddd">
+                <div class="hidden">
                     <img src="img/success/photo6.png" class="img-fluid">
                 </div>
-                <div class="ddd">
+                <div class="hidden">
                     <img src="img/success/photo7.png" class="img-fluid">
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="other-offers">
+<div data-scroll-number="10" class="other-offers">
     <div class="container-fluid">
         <div class="offers-inner-wrapper">
             <div class="offers-header">
@@ -882,7 +882,7 @@
         </div>
     </div>
 </div>
-<div class="footer">
+<div data-scroll-number="11" class="footer">
     <div class="container-fluid">
         <div class="footer-inner-wrapper">
             <div class="footer-form">
