@@ -1,6 +1,6 @@
 .slider-block {
-  @media screen and (min-width: 768px) {
-    height: calc(100vh - 70px);
+  @media screen and (min-width: 1200px) {
+    height: calc(100vh - 100px);
   }
 }
 
@@ -35,7 +35,7 @@
         min-height: 480px;
       }
       @media screen and (min-width: 1200px) {
-        min-height: 550px;
+        min-height: calc(100vh - 100px);
       }
     }
   }
@@ -68,10 +68,10 @@
       content: '';
       display: block;
       width: 100px;
-      height: 550px;
-      border-bottom: 275px solid transparent;
+      height: calc(100vh - 100px);
+      border-bottom: calc(0.5*(100vh - 100px)) solid transparent;
       border-right: 50px solid transparent;
-      border-top: 275px solid $blue;
+      border-top: calc(0.5*(100vh - 100px)) solid $blue;
       border-left: 50px solid $blue;
       position: absolute;
       top: 0;
@@ -98,6 +98,7 @@
   }
   @media screen and (min-width: 1200px) {
     font-size: 60px;
+    bottom: 430px;
   }
 }
 
@@ -194,12 +195,12 @@
     background-size: 120%;
   }
   @media screen and (min-width: 1200px) {
-    background-position: -370px -20px;
-    background-size: 160%;
+    background-position: -370px 0px;
+    background-size: 220%;
   }
   @media screen and (min-width: 1500px) {
-    background-position: -130px -20px;
-    background-size: 120%;
+    background-position: -400px -20px;
+    background-size: 180%;
   }
 }
 

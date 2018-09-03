@@ -48,21 +48,47 @@
   font-size: 36px;
   line-height: 36px;
   width: 195px;
-  padding: 50px 0 20px 40px;
+  padding: 30px 0 20px 20px;
   & span{
     font-family: $bebasregular;
   }
+  @media screen and (min-width: 400px) {
+    //padding: 30px 0 20px calc(0.5*(100vw - 380px));
+    //width: calc(0.5*(100vw - 380px) + 195px);
+    padding: 30px 0 20px 30px;
+    //width: auto;
+  }
   @media screen and (min-width: 768px) {
     font-size: 60px;
-    width: 90%;
-    padding: 70px 0 20px 95px;
+    width: 100%;
+    //padding: 70px 0 20px calc(0.5*(100vw - 535px));
+    padding: 70px 0 20px 0;
+    text-align: center;
   }
 }
 
-.ddd {
-  position: absolute;
-  top: 0;
-  left: 0;
-  //width: 100%;
-  //min-height: 550px;
+.slider-success-wrapper{
+  max-width: 380px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  //@media screen and (min-width: 1200px) {
+  //  max-width: 960px;
+  //  margin: 0 auto;
+  //}
+  //@media screen and (min-width: 1920px) {
+  //  max-width: 1140px;
+  //  margin: 0 auto;
+  //}
+}
+
+.success-image{
+  @media screen and (min-width: 768px) {
+    display: flex;
+    //flex-basis: 50%;
+  }
 }

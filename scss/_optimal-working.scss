@@ -75,11 +75,11 @@
   }
   @media screen and (min-width: 1200px) {
     margin: 0 auto;
-    height: 570px;
+    height: calc(100vh - 183px);
   }
-  @media screen and (min-width: 1920px) {
-    height: 700px;
-  }
+  //@media screen and (min-width: 1920px) {
+  //  height: 700px;
+  //}
 }
 .optimal-working-diagram-image {
   background: url("../img/diagram-1.svg") center / 100% no-repeat;

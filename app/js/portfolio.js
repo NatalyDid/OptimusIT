@@ -89,7 +89,7 @@ $(document).ready(function () {
                 }
             ]
         });
-        $(".slick-slide").removeClass("eee");
+        $(".slick-slide").removeClass("hidden");
     }
 
 });

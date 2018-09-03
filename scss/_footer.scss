@@ -7,6 +7,10 @@
   }
   @media screen and (min-width: 1200px) {
     padding: 80px 0 100px 50%;
+    height: calc(100vh - 56px);
+  }
+  @media screen and (min-width: 1920px) {
+    padding-top: calc(0.5*(100vh - 560px - 56px));
   }
 }
 
@@ -38,6 +42,8 @@
   }
   @media screen and (min-width: 1920px) {
     left: calc(0.5*(100vw - 1160px));
+    height: 750px;
+    top: calc(0.5*(100vh - 750px - 56px));
   }
 }
 
@@ -145,9 +151,11 @@
   @media screen and (min-width: 1200px) {
     right: calc(0.5*(100vw - 1120px));
     left: auto;
+
   }
   @media screen and (min-width: 1920px) {
     right: calc(0.5*(100vw - 1160px));
+    top: calc(0.5*(100vh - 620px - 56px));
   }
   & li {
     //@media screen and (min-width: 768px) {

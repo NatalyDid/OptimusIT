@@ -58,34 +58,34 @@ $(function () {
         }
     }
 
-    //*scrollBlocks();
+    scrollBlocks();
 
-    // $(window).on('resize', scrollBlocks)
+    $(window).on('resize', scrollBlocks)
 
 
 });
-(function () {
-    var srcArr = [
-        'img/success/photo2.png',
-        'img/success/photo2.png',
-        'img/success/photo2.png',
-        'img/success/photo2.png',
-        'img/success/photo2.png',
-        'img/success/photo2.png',
-        'img/success/photo2.png',
-        'img/success/photo2.png'
-    ];
-    let allGalleryItems = [];
-    srcArr.forEach(item => {
-        var tmpItem = document.createElement('img');
-        tmpItem.setAttribute('src', item);
-        allGalleryItems.push(
-            tmpItem
-        );
-    });
-    $('.success-gallery').html('');
-    allGalleryItems.forEach(item => {
-        $('.success-gallery').append(item);
-    })
-
-})();
+// (function () {
+//     var srcArr = [
+//         'img/success/photo2.png',
+//         'img/success/photo2.png',
+//         'img/success/photo2.png',
+//         'img/success/photo2.png',
+//         'img/success/photo2.png',
+//         'img/success/photo2.png',
+//         'img/success/photo2.png',
+//         'img/success/photo2.png'
+//     ];
+//     let allGalleryItems = [];
+//     srcArr.forEach(item => {
+//         var tmpItem = document.createElement('img');
+//         tmpItem.setAttribute('src', item);
+//         allGalleryItems.push(
+//             tmpItem
+//         );
+//     });
+//     $('.success-gallery').html('');
+//     allGalleryItems.forEach(item => {
+//         $('.success-gallery').append(item);
+//     })
+//
+// })();
