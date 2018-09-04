@@ -53,42 +53,49 @@
     font-family: $bebasregular;
   }
   @media screen and (min-width: 400px) {
-    //padding: 30px 0 20px calc(0.5*(100vw - 380px));
-    //width: calc(0.5*(100vw - 380px) + 195px);
     padding: 30px 0 20px 30px;
-    //width: auto;
   }
   @media screen and (min-width: 768px) {
     font-size: 60px;
     width: 100%;
-    //padding: 70px 0 20px calc(0.5*(100vw - 535px));
-    padding: 70px 0 20px 0;
-    text-align: center;
+    padding: 70px 0 20px 95px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  @media screen and (min-width: 1920px) {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 90px;
   }
 }
 
 .slider-success-wrapper{
-  max-width: 380px;
+  max-width: 768px;
   margin: 0 auto;
   @media screen and (min-width: 768px) {
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    //justify-content: center;
   }
-  //@media screen and (min-width: 1200px) {
-  //  max-width: 960px;
-  //  margin: 0 auto;
-  //}
-  //@media screen and (min-width: 1920px) {
-  //  max-width: 1140px;
-  //  margin: 0 auto;
-  //}
+  @media screen and (min-width: 1200px) {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
 }
 
+
 .success-image{
+  //width: 100%;
   @media screen and (min-width: 768px) {
     display: flex;
-    //flex-basis: 50%;
+    flex-basis: 50%;
+  }
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-basis: 33.3333%;
   }
 }

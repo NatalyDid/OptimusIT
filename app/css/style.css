@@ -1088,6 +1088,14 @@ input[type='checkbox'] {
 
 .img7 {
   background-image: url("../img/slides/slide-7.jpg"); }
+  @media screen and (min-width: 768px) {
+    .img7 {
+      background-position: -40px -160px; } }
+  @media screen and (min-width: 1200px) {
+    .img7 {
+      background-position: -195px 0px;
+      -webkit-background-size: 205% 205%;
+      background-size: 205%; } }
 
 .slider-row {
   position: relative; }
@@ -1403,7 +1411,7 @@ input[type='checkbox'] {
   margin-bottom: 25px; }
   @media screen and (min-width: 768px) {
     .intro-title {
-      padding-left: 100px; } }
+      padding-left: 95px; } }
   @media screen and (min-width: 1200px) {
     .intro-title {
       -webkit-box-ordinal-group: 3;
@@ -1568,13 +1576,16 @@ input[type='checkbox'] {
   box-shadow: 0 0 30px 0 rgba(30, 186, 203, 0.4); }
   @media screen and (min-width: 768px) {
     .optimal-working-header {
-      padding: 70px 90px 60px 90px; } }
+      padding: 70px 90px 60px 95px; } }
 
 .optimal-working-title {
   padding: 0 25px; }
   @media screen and (min-width: 768px) {
     .optimal-working-title {
       padding: 0; } }
+  @media screen and (min-width: 1920px) {
+    .optimal-working-title {
+      padding-left: 90px; } }
 
 .optimal-working-title__text {
   color: #0f657f; }
@@ -1684,7 +1695,7 @@ input[type='checkbox'] {
   padding: 30px 15px; }
   @media screen and (min-width: 768px) {
     .projects-header {
-      padding: 70px 90px 60px 90px;
+      padding: 70px 90px 60px 60px;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -1778,7 +1789,7 @@ input[type='checkbox'] {
   padding: 30px 15px; }
   @media screen and (min-width: 768px) {
     .feedback-header {
-      padding: 70px 90px 60px 90px; } }
+      padding: 70px 90px 60px 75px; } }
   @media screen and (min-width: 1200px) {
     .feedback-header {
       padding: 70px 0 60px 0; } }
@@ -1788,6 +1799,9 @@ input[type='checkbox'] {
   @media screen and (min-width: 768px) {
     .feedback-title {
       padding: 0; } }
+  @media screen and (min-width: 1920px) {
+    .feedback-title {
+      padding-left: 90px; } }
 
 .feedback-title__text {
   color: #0f657f; }
@@ -1798,6 +1812,9 @@ input[type='checkbox'] {
   width: 120px;
   height: 0;
   border-bottom: 5px solid #ffcf27; }
+  @media screen and (min-width: 768px) {
+    .feedback-title__line {
+      width: 150px; } }
 
 .slider-feedback-wrapper {
   margin: 0 auto;
@@ -2369,11 +2386,20 @@ input[type='checkbox'] {
     .success-title {
       font-size: 60px;
       width: 100%;
-      padding: 70px 0 20px 0;
-      text-align: center; } }
+      padding: 70px 0 20px 95px; } }
+  @media screen and (min-width: 1200px) {
+    .success-title {
+      max-width: 960px;
+      margin: 0 auto;
+      padding-left: 0; } }
+  @media screen and (min-width: 1920px) {
+    .success-title {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding-left: 90px; } }
 
 .slider-success-wrapper {
-  max-width: 380px;
+  max-width: 768px;
   margin: 0 auto; }
   @media screen and (min-width: 768px) {
     .slider-success-wrapper {
@@ -2384,18 +2410,31 @@ input[type='checkbox'] {
       display: flex;
       -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center; } }
+      flex-wrap: wrap; } }
+  @media screen and (min-width: 1200px) {
+    .slider-success-wrapper {
+      max-width: 1140px;
+      margin: 0 auto; } }
 
 @media screen and (min-width: 768px) {
   .success-image {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%; } }
+
+@media screen and (min-width: 1024px) {
+  .success-image {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-basis: 33.3333%;
+    -ms-flex-preferred-size: 33.3333%;
+    flex-basis: 33.3333%; } }
 
 .online-contact {
   -webkit-transform: rotate(270deg);

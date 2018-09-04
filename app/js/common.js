@@ -58,9 +58,9 @@ $(function () {
         }
     }
 
-    scrollBlocks();
+    //scrollBlocks();
 
-    $(window).on('resize', scrollBlocks)
+    //$(window).on('resize', scrollBlocks)
 
 
 });
