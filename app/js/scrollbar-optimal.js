@@ -1,11 +1,7 @@
 $(function () {
     const ps = new PerfectScrollbar('#optimal-working-diagram');
     ps.update();
-    //     , {
-    //     wheelSpeed: 2,
-    //     wheelPropagation: true,
-    //     minScrollbarLength: 20
-    // });
+
     function psManualUpdate() {
         var tout = setTimeout(function () {
             ps.update();

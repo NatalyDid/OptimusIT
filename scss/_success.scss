@@ -3,6 +3,8 @@
   border-top: 10px solid $green;
   @media screen and (min-width: 1200px) {
     height: 100vh;
+    display: flex;
+    align-items: center;
   }
   .slick-arrow {
     position: absolute;
@@ -79,7 +81,6 @@
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
-    //justify-content: center;
   }
   @media screen and (min-width: 1200px) {
     max-width: 1140px;
@@ -89,13 +90,10 @@
 
 
 .success-image{
-  //width: 100%;
   @media screen and (min-width: 768px) {
-    display: flex;
     flex-basis: 50%;
   }
   @media screen and (min-width: 1024px) {
-    display: flex;
     flex-basis: 33.3333%;
   }
 }

@@ -106,7 +106,6 @@ input[type='checkbox'] {
   & li {
     border-bottom: 2px solid $light-turquoise;
     display: block;
-    //height: 45px;
     @media screen and (min-width: 768px) {
       border-bottom: none;
     }
@@ -119,9 +118,6 @@ input[type='checkbox'] {
     & a {
       @extend .font-opensans;
       color: $light-blue;
-      //padding-left: 20px;
-      //height: 45px;
-      //line-height: 45px;
       display: block;
       &:hover, :active, :focus{
         background: $light-turquoise;
@@ -253,21 +249,10 @@ input[type='checkbox'] {
 }
 
 .menu_top {
-  //margin-top: 15px;
   & .main-menu {
     & > li {
       display: inline-block;
-      //padding: 20px 25px 0 25px;
-      //&:hover,
-      //&:active,
-      //&:focus{
-      //  background: $light-turquoise;
-      //}
-      //&:last-child {
-      //  margin-right: 0;
-      //}
       & > a {
-        //padding-left: 0;
         padding: 33px 25px 15px 25px;
         height: auto;
         line-height: initial;
